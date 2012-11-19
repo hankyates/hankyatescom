@@ -2,8 +2,8 @@ define([], function(){
   Page = Backbone.Model.extend({
     defaults: function() {
       return {
-        title: "empty todo...",
-        visible: false
+        title: "Empty Page",
+        content: "Lorem Ipsum"
       };
     },
 
@@ -43,11 +43,12 @@ define([], function(){
       var collection = this.collection,
           model = this.model,
           self = this;
+
       if(model){
-        this.$el.html(this.template(model.toJSON()));
+        this.$el.append(this.template(model.toJSON()));
       }else if(collection){
         collection.each(function(item){
-          self.$el.html(self.template(item.toJSON()));
+          self.$el.append(self.template(item.toJSON()));
         })
       }
 

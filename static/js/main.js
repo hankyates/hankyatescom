@@ -1,4 +1,8 @@
 $(window).on('load', function(){
+  require.config({
+      urlArgs: "cache=disabled" + (new Date()).getTime()
+  });
+
   require([
     'static/js/page'
     ], function(){
