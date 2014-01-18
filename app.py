@@ -21,7 +21,6 @@ def pages():
     },{
       'title': 'Fried Dog',
       'content': '<p>Recently a fellow programmer and I were sharing our love of cooking and discovered that we both had a the age old problem of balancing a recipe ingredient list, pantry inventory, and shopping list. Particularly whenever you are at the grocery store and you seem to have forgotten key details about whether or not you have tomatoes. Thus, <a href="https://github.com/hankyates/fried_dog">Fried Dog</a> was born.</p><p>The name is a codename joke and plays on <a href="https://twitter.com/jamestrinklein">James\'</a> dark sense of humor. The tech for this project is exciting. We are going for a thick client using Backbone and redis as a cache. I\'ve used redis before on a larger scale application and even at this smaller scale it offers giant performance increases. Should be a fun project. Keep tuned for updates.</p>'
-    },{
     }
   return make_response(dumps(pages[::-1]))
 
