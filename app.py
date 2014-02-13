@@ -21,6 +21,9 @@ def pages():
     },{
       'title': 'Kitch',
       'content': '<p>Recently a fellow programmer and I were sharing our love of cooking and discovered that we both had a the age old problem of balancing a recipe ingredient list, pantry inventory, and shopping list. Particularly whenever you are at the grocery store and you seem to have forgotten key details about whether or not you have tomatoes. Thus, <a href="https://github.com/hankyates/kitch">Kitch</a> was born.</p><p>The tech for this project is exciting. We are going for a thick client using Backbone and redis as a cache. I\'ve used redis before on a larger scale application and even at this smaller scale it offers giant performance increases. Should be a fun project. Keep tuned for updates.</p>'
+    },{
+      'title': 'This site is moving',
+      'content': 'Just a heads up that I\'ve moved my blog over to <a href="http://blog.hankyates.com">blog.hankyates.com</a> and this site will shortly be turning into a portfolio site. Check my blog for updates on the progress!'
     }
   return make_response(dumps(pages[::-1]))
 
